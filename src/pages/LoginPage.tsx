@@ -46,10 +46,7 @@ const LoginPage = () => {
           {/* Logo */}
           <div className="text-center">
             <Link to="/" className="inline-flex items-center gap-2">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl gradient-primary">
-                <span className="text-2xl font-bold text-primary-foreground">C</span>
-              </div>
-              <span className="text-2xl font-bold text-foreground">
+              <span className="text-2xl font-bold text-foreground text-3xl">
                 Chra7 <span className="text-primary">liya</span>
               </span>
             </Link>
