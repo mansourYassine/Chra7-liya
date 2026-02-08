@@ -200,8 +200,8 @@ const LandingPage = () => {
             <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
               Rejoignez la communauté Chra7 liya et commencez à apprendre avec vos camarades dès aujourd'hui.
             </p>
-            <Link to="/inscription">
-              <Button size="lg" variant="secondary" className="gap-2 px-8 h-12 text-lg font-semibold">
+            <Link to="/inscription" className="w-full sm:w-auto mx-auto">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 px-6 sm:px-8 h-12 text-base sm:text-lg font-semibold">
                 <CheckCircle2 className="h-5 w-5" />
                 S'inscrire gratuitement
               </Button>
