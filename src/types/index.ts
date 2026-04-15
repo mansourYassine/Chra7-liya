@@ -53,6 +53,15 @@ export interface Transaction {
   methode?: 'carte' | 'cash_plus';
 }
 
+export interface MarketplaceOffer {
+  id: string;
+  vendeurId: string;
+  points: number;
+  prixMAD: number;
+  status: 'disponible' | 'vendue';
+  createdAt: string;
+}
+
 export interface AuthState {
   isAuthenticated: boolean;
   currentUser: User | null;

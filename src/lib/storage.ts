@@ -1,4 +1,4 @@
-import { User, Session, Inscription, Transaction } from '@/types';
+import { User, Session, Inscription, Transaction, MarketplaceOffer  } from '@/types';
 
 // Storage keys
 const KEYS = {
