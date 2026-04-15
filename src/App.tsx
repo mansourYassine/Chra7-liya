@@ -13,6 +13,7 @@ import DashboardPage from "./pages/DashboardPage";
 import SessionsPage from "./pages/SessionsPage";
 import CreateSessionPage from "./pages/CreateSessionPage";
 import BuyPointsPage from "./pages/BuyPointsPage";
+import MarketplacePage from "./pages/MarketplacePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -77,7 +78,11 @@ const AppRoutes = () => {
           <BuyPointsPage />
         </ProtectedRoute>
       } />
-
+      <Route path="/marketplace" element={
+        <ProtectedRoute>
+          <MarketplacePage />
+        </ProtectedRoute>
+      } />
       {/* Catch-all */}
       <Route path="*" element={<NotFound />} />
     </Routes>

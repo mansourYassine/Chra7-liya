@@ -16,7 +16,8 @@ import {
   MapPin,
   Video,
   Star,
-  ArrowRight
+  ArrowRight,
+  ShoppingBag
 } from 'lucide-react';
 import { getSessions, getSessionsByAideur, getSessionsByParticipant, getTransactionsByUser, getUserById } from '@/lib/storage';
 import { Session } from '@/types';
@@ -155,6 +156,23 @@ const DashboardPage = () => {
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">Acheter des points</h3>
                     <p className="text-sm text-muted-foreground">Rechargez votre solde pour rejoindre plus de sessions</p>
+                  </div>
+                  <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+
+          <Link to="/marketplace">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-14 w-14 rounded-xl bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <ShoppingBag className="h-7 w-7 text-accent-foreground" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-lg">Marketplace</h3>
+                    <p className="text-sm text-muted-foreground">Achetez ou vendez des points entre stagiaires</p>
                   </div>
                   <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
                 </div>

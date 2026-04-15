@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
-import { LogOut, Menu, X, Coins, BookOpen, Home, PlusCircle, ShoppingCart } from 'lucide-react';
+import { LogOut, Menu, X, Coins, BookOpen, Home, PlusCircle, ShoppingCart, Store } from 'lucide-react';
 import { useState } from 'react';
 
 const Header = () => {
@@ -14,6 +14,7 @@ const Header = () => {
     { path: '/sessions', label: 'Sessions', icon: BookOpen },
     { path: '/creer-session', label: 'Créer une session', icon: PlusCircle },
     { path: '/acheter-points', label: 'Acheter des points', icon: ShoppingCart },
+    { path: '/marketplace', label: 'Marketplace', icon: Store },
   ];
 
   const isActive = (path: string) => location.pathname === path;

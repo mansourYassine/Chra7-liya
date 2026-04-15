@@ -1,4 +1,4 @@
-import { User, Session, Inscription, Transaction } from '@/types';
+import { User, Session, Inscription, Transaction, MarketplaceOffer } from '@/types';
 
 // Mock Users
 export const mockUsers: User[] = [
@@ -196,6 +196,26 @@ export const mockTransactions: Transaction[] = [
   },
 ];
 
+// Mock Marketplace Offers
+export const mockMarketplaceOffers: MarketplaceOffer[] = [
+  {
+    id: 'offer-1',
+    vendeurId: 'user-3',
+    points: 50,
+    prixMAD: 40,
+    status: 'disponible',
+    createdAt: '2025-02-10',
+  },
+  {
+    id: 'offer-2',
+    vendeurId: 'user-4',
+    points: 30,
+    prixMAD: 25,
+    status: 'disponible',
+    createdAt: '2025-02-12',
+  },
+];
+
 // Initialize localStorage with mock data if empty
 export const initializeMockData = () => {
   if (!localStorage.getItem('chra7liya_users')) {
@@ -209,5 +229,8 @@ export const initializeMockData = () => {
   }
   if (!localStorage.getItem('chra7liya_transactions')) {
     localStorage.setItem('chra7liya_transactions', JSON.stringify(mockTransactions));
+  }
+  if (!localStorage.getItem('chra7liya_marketplace_offers')) {
+    localStorage.setItem('chra7liya_marketplace_offers', JSON.stringify(mockMarketplaceOffers));
   }
 };
