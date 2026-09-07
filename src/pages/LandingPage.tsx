@@ -87,7 +87,7 @@ const LandingPage = () => {
         <div className="container mx-auto text-center max-w-4xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
             <GraduationCap className="h-4 w-4" />
-            Plateforme d'entraide pour les stagiaires du CMC
+            Plateforme d'entraide pour les étudiants
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
@@ -96,7 +96,7 @@ const LandingPage = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-            Chra7 liya connecte les stagiaires du CMC pour s'entraider. 
+            Chra7 liya connecte les étudiants pour s'entraider. 
             Partagez vos connaissances, gagnez des points, et améliorez vos résultats aux examens.
           </p>
 
@@ -213,7 +213,7 @@ const LandingPage = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground text-sm">
-          <p>© 2025 Chra7 liya - Plateforme d'entraide pour les stagiaires du CMC</p>
+          <p>© 2025 Chra7 liya - Plateforme d'entraide pour les étudiants</p>
           <p className="mt-2">Prototype de démonstration</p>
         </div>
       </footer>
